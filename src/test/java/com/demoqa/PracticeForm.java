@@ -24,11 +24,13 @@ public class PracticeForm {
         open("/automation-practice-form");
         $("[id=firstName]").setValue("Bananov");
         $("[id=lastName]").setValue("Norman");
-        $("[id=userEmail]").setValue("banorman@mail.com");
-        //$("[gender-radio-1]").selectRadio(s);
-        //$(By.name("gender-radio-1")).selectRadio("Male");
-        //$(By.name("gender")).setValue("Male");
-        //$("[id=gender-radio-1]").click("custom-control-label");
+        $("[id=userEmail]").setValue("banorman@demoqa.com");
         $("#gender-radio-1").doubleClick();
+        $("[id=userNumber]").setValue("8909909909");
+        $("[id=dateOfBirth]").doubleClick();
+        $("[id=dateOfBirthInput]").click();
+        $("[class=react-datepicker__month-select]").click();
+        $("[class=react-datepicker__month-select]").selectOption("April");
+
     }
 }
