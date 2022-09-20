@@ -41,7 +41,7 @@ public class PracticeForm {
         //$("#uploadPicture").doubleClick();
         //$("#uploadPicture").uploadFromClasspath("1.png");
         //$("#uploadPicture").uploadFromClasspath(String.valueOf(new File("src/test/resources/1.png")));
-        File cv = new File("C:\\Users\\Ксения\\IdeaProjects\\demoqa-tests-15\\src\\test\\java\\resources");
+        File cv = new File("src/test/java/resources/1.PNG");
         $("#uploadPicture").uploadFile(cv);
     }
 }
