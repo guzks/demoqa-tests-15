@@ -10,7 +10,9 @@ import org.openqa.selenium.By;
 import javax.swing.plaf.basic.BasicBorders;
 
 import java.io.File;
+import java.nio.file.Files;
 
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -38,10 +40,12 @@ public class PracticeForm {
         $("[class*='react-datepicker__day--021']").click();
         $("#subjectsInput").setValue("History").pressEnter();
        // $("#hobbies-checkbox-2").click();
-        //$("#uploadPicture").doubleClick();
-        //$("#uploadPicture").uploadFromClasspath("1.png");
-        //$("#uploadPicture").uploadFromClasspath(String.valueOf(new File("src/test/resources/1.png")));
-        File cv = new File("src/test/java/resources/1.PNG");
-        $("#uploadPicture").uploadFile(cv);
+        File attach = new File("src/test/java/resources/1.PNG");
+        $("#uploadPicture").uploadFile(attach);
+        $("#currentAddress").setValue("current Address");
+        $("#state").click();
+        $("#stateCity-wrapper").$(byText("NCR")).click();
+        $("#city").click();
+        $("#stateCity-wrapper").$(byText("Gurgaon")).click();
     }
 }
