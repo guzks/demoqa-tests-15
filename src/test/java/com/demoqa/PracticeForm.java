@@ -28,10 +28,10 @@ public class PracticeForm {
         $("#gender-radio-1").doubleClick();
         $("#userNumber").setValue("8909909909");
         $("#dateOfBirthInput").click();
-        $("[class=react-datepicker__month-select]").click();
-        $("[class=react-datepicker__month-select]").selectOption("April");
-        $("[class=react-datepicker__year-select]").click();
-        $("[class=react-datepicker__year-select]").selectOption("1997");
+        $(".react-datepicker__month-select").click();
+        $(".react-datepicker__month-select").selectOption("April");
+        $(".react-datepicker__year-select").click();
+        $(".react-datepicker__year-select").selectOption("1997");
         $("[class*='react-datepicker__day--021']").click();
         $("#subjectsInput").setValue("History").pressEnter();
         $("#hobbiesWrapper").$(byText("Music")).click();
